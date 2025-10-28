@@ -24,8 +24,6 @@ keys
 *.tsv
 *tflite
 variables*
-*.csv
-*ipynb
 *.zip
 
 # mlflow
