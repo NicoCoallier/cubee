@@ -1,0 +1,27 @@
+digraph {
+	subgraph "clusterintervals (14)" {
+		lambda0 [label="lambda0
+~
+Gamma" shape=ellipse]
+		label="intervals (14)" labeljust=r labelloc=b style=rounded
+	}
+	beta [label="beta
+~
+Normal" shape=ellipse]
+	subgraph "cluster307 x 14" {
+		mu [label="mu
+~
+Deterministic" shape=box]
+		lambda_ [label="lambda_
+~
+Deterministic" shape=box]
+		obs [label="obs
+~
+Poisson" shape=ellipse style=filled]
+		label="307 x 14" labeljust=r labelloc=b style=rounded
+	}
+	lambda0 -> lambda_
+	beta -> lambda_
+	lambda_ -> mu
+	mu -> obs
+}
