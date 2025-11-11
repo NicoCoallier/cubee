@@ -9,15 +9,15 @@ Gamma" shape=ellipse]
 ~
 Normal" shape=ellipse]
 	subgraph "cluster307 x 14" {
-		mu [label="mu
-~
-Deterministic" shape=box]
-		lambda_ [label="lambda_
-~
-Deterministic" shape=box]
 		obs [label="obs
 ~
 Poisson" shape=ellipse style=filled]
+		lambda_ [label="lambda_
+~
+Deterministic" shape=box]
+		mu [label="mu
+~
+Deterministic" shape=box]
 		label="307 x 14" labeljust=r labelloc=b style=rounded
 	}
 	lambda0 -> lambda_
